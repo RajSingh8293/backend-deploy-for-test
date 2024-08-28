@@ -7,6 +7,12 @@ const port = process.env.PORT || 3000;
 app.get("/about", (req, res) => {
   res.send({ message: "Hello Hii this is raj" });
 });
+app.get("/contact", (req, res) => {
+  res.send({ message: "Hello Hii this is contact" });
+});
+app.get("/login", (req, res) => {
+  res.send({ message: "Hello Hii this is login" });
+});
 app.get("/", (req, res) => {
   res.json([
     {
